@@ -17,6 +17,9 @@ import { MoovieProvider } from '../providers/moovie/moovie';
 import { ConfiguracoesPageModule } from '../pages/configuracoes/configuracoes.module';
 import { SobrePageModule } from '../pages/sobre/sobre.module';
 import { PerfilPageModule } from '../pages/perfil/perfil.module';
+import { FilmeDetalhesPageModule } from '../pages/filme-detalhes/filme-detalhes.module';
+import { CameraPage } from '../pages/camera/camera';
+import { CameraPageModule } from '../pages/camera/camera.module';
 
 
 @NgModule({
@@ -35,7 +38,9 @@ import { PerfilPageModule } from '../pages/perfil/perfil.module';
     HttpModule,
     ConfiguracoesPageModule,
     SobrePageModule,
-    PerfilPageModule
+    PerfilPageModule,
+    FilmeDetalhesPageModule,
+    CameraPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -43,7 +48,8 @@ import { PerfilPageModule } from '../pages/perfil/perfil.module';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    CameraPage
   ],
   providers: [
     StatusBar,
